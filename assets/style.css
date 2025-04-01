@@ -2,26 +2,40 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+header {
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(223, 116, 116);
+}
+
+.logo {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio {
+    grid-area: inicio;
+
+}
+
 .menu {
-    grid-area: menu;
-    background-color: brown;
+    background-color: rgb(156, 75, 75);
     color: white;
     padding: 1em;
+    height: 100vh;
 }
 
-
-.filtro {
-    grid-area: filtro;
-    background-color: rgb(223, 116, 116);
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
 
 .grid {
     grid-area: grid;
+    padding: 0.8em;
     gap: 15px;
     text-align: center;
 
@@ -30,22 +44,28 @@
 .producto {
     display: flex;
     flex-direction: column;
-    border: solid 1.5px rgb(173, 172, 173);
+    
 }
 
-
-.numeros {
-    grid-area: numeros;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.sorteo {
+    grid-area: sorteo;
+    color: white;
+    background-color: rgb(249, 104, 104);
+    margin: 0.5em;
+    
 }
 
-.numeros p {
-    border: solid 2px gray;
+.sorteo h2 {
     text-align: center;
-    flex-grow: 0.03;
+    
+}
+
+.sorteo p,h6 {
+    text-align: center;
+}
+
+.contacto {
+    grid-area: contacto;
 }
 
 button {
@@ -63,19 +83,6 @@ footer {
     color: white;
 }
 
-@media (max-width:576px) {
-    .categorias {
-        display: none;
-    }
-}
-
-@media (max-width:576px) {
-    .producto {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (min-width:577px) {
     .grid {
         display: grid;
@@ -83,21 +90,14 @@ footer {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:577px) {
     .container {
         display: grid;
         grid-template-areas:
-            "menu filtro"
-            "menu grid"
-            "footer numeros";
+            "header header"
+            "inicio grid"
+            "inicio sorteo"
+            "inicio contacto"
+            "footer footer"
     }
-}
-
-
-@media (min-width:768px) {
-    .grid {
-        padding: 0.5em;
-        margin: 0;
-    }
-
 }
