@@ -61,6 +61,14 @@ ul {
     text-align: center;
 }
 
+.producto ,img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9em;
+
+}
 
 .producto {
     display: flex;
