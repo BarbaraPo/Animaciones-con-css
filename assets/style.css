@@ -46,8 +46,8 @@ a {
 .menu {
     background-color: rgb(156, 75, 75);
     color: white;
-    padding: 1em;
-    height: 150vh;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -61,7 +61,8 @@ ul {
     text-align: center;
 }
 
-.producto ,img {
+.producto,
+img {
 
     display: flex;
     justify-content: center;
@@ -87,17 +88,20 @@ ul {
     font-size: 1.5em;
 }
 
+.servicio {
+    padding-bottom: 1em;
+}
+
 .contacto {
     grid-area: contacto;
     color: white;
     background-color: rgb(249, 104, 104);
     margin: 0.5em;
     text-align: center;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-size: 1.5em;
+    padding-top: 1em;
+    font-size: 1.3em;
+    height: 85%;
 }
-
 
 button {
     color: white;
@@ -119,6 +123,28 @@ footer {
     padding-top: 2em;
     text-align: center;
     color: white;
+}
+
+.fa-brands {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media (min-width:576px) {
+    .menu {
+        background-color: rgb(156, 75, 75);
+        color: white;
+        padding: 1em;
+        height: 180vh;
+    }
+
+}
+
+@media (max-width:576px) {
+    .producto {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 @media (min-width:577px) {
