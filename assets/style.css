@@ -54,6 +54,11 @@ ul {
     list-style-type: none;
 }
 
+li {
+    padding-top: 0.5em;
+    padding-bottom: 1em ;
+    font-size: 1.3em;
+}
 .grid {
     grid-area: grid;
     padding: 0.8em;
@@ -89,18 +94,14 @@ img {
 }
 
 .servicio {
-    padding-bottom: 1em;
-}
-
-.contacto {
-    grid-area: contacto;
+    grid-area: servicio;
     color: white;
     background-color: rgb(249, 104, 104);
-    margin: 0.5em;
+    margin: 0.8em;
+    padding-top: 0.5em;
     text-align: center;
-    padding-top: 1em;
-    font-size: 1.3em;
-    height: 85%;
+    font-size: 1.2em;
+  
 }
 
 button {
@@ -161,7 +162,7 @@ footer {
             "header header"
             "inicio grid"
             "inicio sorteo"
-            "inicio contacto"
+            "inicio servicio"
             "footer footer"
     }
 }
